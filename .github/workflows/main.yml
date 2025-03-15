@@ -1,0 +1,13 @@
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - main  # Change this if your branch is different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
